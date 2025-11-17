@@ -1,4 +1,4 @@
-name: zSofle
+name: zsofle
 build:
   settings:
     board_root: .

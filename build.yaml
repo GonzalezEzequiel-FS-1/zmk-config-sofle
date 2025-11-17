@@ -6,7 +6,7 @@
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
 board: ["nice_nano_v2"]
-shield: ["zSofle_left", "zSofle_right"]
+shield: ["zsofle_left", "zsofle_right"]
 #include:
 #  - artifact-name: zSofle_studio
 #   - board: bdn9_rev2
