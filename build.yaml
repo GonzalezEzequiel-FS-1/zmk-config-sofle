@@ -7,7 +7,8 @@
 #
 board: ["nice_nano_v2"]
 shield: ["zSofle_left", "zSofle_right"]
-# include:
+include:
+  artifact-name: zSofle_studio
 #   - board: bdn9_rev2
 #   - board: nice_nano_v2
 #     shield: reviung41
@@ -15,7 +16,7 @@ shield: ["zSofle_left", "zSofle_right"]
 #     shield: corne_left
 #     snippet: studio-rpc-usb-uart
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
-#     artifact-name: corne_left_with_studio
+
 #
 ---
 
