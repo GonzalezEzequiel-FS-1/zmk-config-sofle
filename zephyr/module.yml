@@ -1,3 +1,4 @@
 build:
+  name: zSofle
   settings:
     board_root: .
