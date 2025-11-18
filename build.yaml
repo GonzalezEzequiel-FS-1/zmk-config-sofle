@@ -8,8 +8,8 @@
 #board: ["nice_nano_v2"]
 #shield: ["zsofle_left", "zsofle_right"]
 include:
-  - artifact-name: zSofle
-  #   - board: bdn9_rev2
+#  - artifact-name: zSofle
+#   - board: bdn9_rev2
   - board: nice_nano_v2
     shield: "zSofle_left"
 
