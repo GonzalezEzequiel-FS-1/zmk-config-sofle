@@ -1,0 +1,88 @@
+# ZMK Custom Handwired Keyboard
+
+A custom handwired split keyboard running ZMK firmware on nRF52-based microcontrollers.
+
+## Hardware Specifications
+
+### Matrix Configuration
+- **Layout**: Split keyboard (Lily58-style layout)
+- **Total Keys**: 58 keys total (29 per half)
+- **Diode Direction**: Column-to-Row (COL2ROW)
+- **Matrix Size**: 5 rows × 6 columns per half
+- **Rotary Encoders**: 2 (one per half)
+
+### Pin Mapping
+
+#### Column Pins (GPIO)
+- Column 0: GPIO 6
+- Column 1: GPIO 8
+- Column 2: GPIO 17
+- Column 3: GPIO 20
+- Column 4: GPIO 22
+- Column 5: GPIO 24
+
+#### Row Pins (GPIO with Pull-Down)
+- Row 0: GPIO 11
+- Row 1: GPIO 31
+- Row 2: GPIO 29
+- Row 3: GPIO 2
+- Row 4: GPIO 10
+
+All row pins are configured with `GPIO_ACTIVE_HIGH` and `GPIO_PULL_DOWN` resistors.
+
+
+**Bluetooth Controls:**
+- `BT1-5`: Select Bluetooth profile 1-5
+- `BTCLR`: Clear current Bluetooth profile
+
+**RGB Controls:**
+- `RGBTG`: RGB toggle on/off
+- `RGB-E/+E`: Cycle RGB effects backward/forward
+- `BR-/+`: Brightness decrease/increase
+- `HU-/+`: Hue decrease/increase
+- `SA-/+`: Saturation decrease/increase
+
+**Media Controls:**
+- `PREV`: Previous track
+- `PLAY`: Play/Pause
+- `NEXT`: Next track
+
+## Features
+
+- **Split Design**: Ergonomic split layout for comfortable typing
+- **ZMK Firmware**: Modern, wireless-first keyboard firmware
+- **Layer System**: Three configurable layers for different use cases
+- **Bluetooth Support**: Connect to up to 5 different devices
+- **RGB Underglow**: Customizable RGB lighting (if hardware installed)
+- **Rotary Encoder Support**: Two rotary encoders for volume and scrolling
+- **Mod-Tap Keys**: Dual-function keys for efficient layout usage
+- **External Power Control**: Toggle power to RGB/peripherals for battery saving
+
+## Building and Flashing
+
+1. Set up the ZMK build environment following the [official documentation](https://zmk.dev/docs)
+2. Clone your keyboard configuration repository
+3. Update the configuration files with your specific hardware details
+4. Build the firmware using GitHub Actions or locally
+5. Flash the resulting `.uf2` file to your microcontroller
+
+## Configuration Files
+
+- **Keymap**: Define key assignments and layer behavior
+- **Matrix Configuration**: Hardware pin mappings and matrix definition
+- **Physical Layout**: Visual representation and kscan assignment
+
+## Customization
+
+To customize your keymap, edit the keymap file and adjust the `bindings` for each layer. Refer to the [ZMK documentation](https://zmk.dev/docs/keymaps) for available keycodes and behaviors.
+
+## License
+
+Copyright (c) 2020 The ZMK Contributors  
+SPDX-License-Identifier: MIT
+
+## Resources
+
+- [ZMK Documentation](https://zmk.dev/docs)
+- [ZMK Discord Community](https://zmk.dev/community/discord/invite)
+- [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)
