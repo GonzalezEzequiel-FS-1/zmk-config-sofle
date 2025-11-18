@@ -11,10 +11,10 @@ include:
   - artifact-name: zSofle
   #   - board: bdn9_rev2
   - board: nice_nano_v2
-    shield: "zsofle_left"
+    shield: "zSofle_left"
 
   - board: nice_nano_v2
-    shield: "zsofle_right"
+    shield: "zSofle_right"
 #   - board: nice_nano_v2
 #     shield: corne_left
 #     snippet: studio-rpc-usb-uart
